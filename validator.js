@@ -28,6 +28,8 @@ module.exports = function RouteValidator (
   }
 
   return function validateRequest (event) {
+    event.pathParameters = event.pathParameters || {}
+    event.queryStringParameters = event.queryStringParameters || {}
     return Promise.all([
       validateBody(event, validate.body),
       validateQuery(event, validate.query),
