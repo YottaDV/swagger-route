@@ -1,5 +1,5 @@
 {
-  "name": "sls-swagger-route",
+  "name": "@ydv/swagger-route",
   "main": "index.js",
   "version": "0.0.0",
   "description": "Routes for swagger+serverless",
@@ -17,11 +17,17 @@
     "serverless-swagger-route"
   ],
   "devDependencies": {
-    "tape": "^4.0.0",
-    "standard": "^7.0.0"
+    "proxyquire": "^2.0.1",
+    "standard": "^11.0.1",
+    "tape": "^4.0.0"
   },
   "files": [
     "index.js",
     "test.js"
-  ]
+  ],
+  "dependencies": {
+    "@ydv/function": "^1.1.3",
+    "define-error": "^1.1.0",
+    "spok": "^0.9.1"
+  }
 }
