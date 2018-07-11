@@ -1,0 +1,27 @@
+{
+  "name": "sls-swagger-route",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Routes for swagger+serverless",
+  "license": "MIT",
+  "repository": "ajoslin/sls-swagger-route",
+  "author": {
+    "name": "Andrew Joslin",
+    "email": "andrewtjoslin@gmail.com",
+    "url": "ajoslin.com"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "serverless-swagger-route"
+  ],
+  "devDependencies": {
+    "tape": "^4.0.0",
+    "standard": "^7.0.0"
+  },
+  "files": [
+    "index.js",
+    "test.js"
+  ]
+}
