@@ -1,7 +1,7 @@
 {
   "name": "@ydv/swagger-route",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Routes for swagger+serverless",
   "license": "MIT",
   "repository": "ajoslin/sls-swagger-route",
