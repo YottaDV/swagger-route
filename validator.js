@@ -1,3 +1,4 @@
+const qs = require('qs')
 const Ajv = require('ajv')
 const defineError = require('define-error')
 
@@ -50,7 +51,7 @@ function validateBody (event, validate) {
 
 function validateQuery (event, validate) {
   if (!validate) return
-  const valid = validate(event.queryStringParameters)
+  const valid = validate(qs.parse(event.queryStringParameters))
   if (!valid) {
     return Promise.reject(
       createValidationError(validate.errors, event.queryStringParameters, 'query')
