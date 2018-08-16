@@ -23,7 +23,7 @@
     "spok": "^0.9.1"
   },
   "dependencies": {
-    "@ydv/function": "^1.1.3",
+    "@ydv/function": "^1.2.0",
     "ajv": "^6.5.2",
     "define-error": "^1.1.0"
   }
