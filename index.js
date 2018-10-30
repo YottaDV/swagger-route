@@ -16,7 +16,7 @@ function getRouteOptions (handler) {
 function Route (handler, options = {}) {
   assertValidRoute(handler, options)
 
-  options.method = options.method.toLowerCase()
+  if (options.method) options.method = options.method.toLowerCase()
 
   handler = createYdvFunction(handler, {
     runBefore: RouteValidator(options.definition, options)
