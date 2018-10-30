@@ -35,12 +35,12 @@ function assertValidRoute (handler, options) {
       options
     )}`
   )
-  assert.equal(typeof options.path, 'string', 'options.path must be string')
-  assert.equal(
-    typeof options.method,
-    'string',
-    `${options.path}: options.method must be string`
-  )
+  // assert.equal(typeof options.path, 'string', 'options.path must be string')
+  // assert.equal(
+  //   typeof options.method,
+  //   'string',
+  //   `${options.path}: options.method must be string`
+  // )
   assert.equal(
     typeof options.definition,
     'object',

@@ -1,13 +1,7 @@
 const { promisify } = require('util')
 const test = require('tape')
 const spok = require('spok')
-const proxyquire = require('proxyquire')
-const { Route, getRouteOptions } = proxyquire('./', {
-  '@ydv/mongo': {
-    connect: () => {},
-    '@global': true
-  }
-})
+const { Route, getRouteOptions } = require('./')
 
 test('validation of route options', async t => {
   const handler = (event) => { return event.body.number * 2 }
