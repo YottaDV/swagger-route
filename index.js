@@ -2,7 +2,7 @@ const assert = require('assert')
 const createYdvFunction = require('@ydv/function')
 const RouteValidator = require('./validator')
 
-const optionsKey = Symbol('swagger-options')
+const optionsKey = '_swagger-options'
 
 module.exports = {
   getRouteOptions,
